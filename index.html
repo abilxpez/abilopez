@@ -38,69 +38,76 @@ h4, h3, h2 {
 	<div className="navigation">
 	  <nav class="navbar navbar-collapseOnSelect navbar-expand-md navbar-light" >
 		<div class="container-fluid">
-		  <Link class="navbar-brand" to="/">
+		  <a class="navbar-brand" href="index.html">
 			<span class="h3" >
-			  Exploring Immigrant Identity Through Art
+			  Abi Lopez
 			</span>
-		  </Link>
-		  <div class="navbar-toggler" aria-controls="responsive-navbar-nav"></div>
-		  <div class="navbar-collapse" id="responsive-navbar-nav">
+		  </a>
+		  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#responsive-navbar-nav" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse" id="responsive-navbar-nav">
 			<ul class="navbar-nav ml-auto">
 			  <li>
-				<Link class="nav-link" href="index.html">
+				<a class="nav-link" href="index.html">
 				  <span class="h4">
 					Home
 				  </span>
-				</Link>
+				</a>
 			  </li>
 			  <li>
-				<Link class="nav-link" href="bio.html">
+				<a class="nav-link" href="bio.html">
 				  <span class="h4">
 					Resume
 				  </span>
-				</Link>
+				</a>
 			  </li>
 			  <li>
-				<Link class="nav-link" href="projects.html">
+				<a class="nav-link" href="projects.html">
 				  <span class="h4">
 					Projects
 				  </span>
-				</Link>
+				</a>
 			  </li>
 			</ul>
 		  </div>
 		</div>
 	  </nav>
-	</div>
 
+	  <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+		<Container>
+		<Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+		<Navbar.Toggle aria-controls="responsive-navbar-nav" />
+		<Navbar.Collapse id="responsive-navbar-nav">
+		  <Nav className="me-auto">
+			<Nav.Link href="#features">Features</Nav.Link>
+			<Nav.Link href="#pricing">Pricing</Nav.Link>
+			<NavDropdown title="Dropdown" id="collasible-nav-dropdown">
+			  <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+			  <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
+			  <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+			  <NavDropdown.Divider />
+			  <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+			</NavDropdown>
+		  </Nav>
+		  <Nav>
+			<Nav.Link href="#deets">More deets</Nav.Link>
+			<Nav.Link eventKey={2} href="#memes">
+			  Dank memes
+			</Nav.Link>
+		  </Nav>
+		</Navbar.Collapse>
+		</Container>
+	  </Navbar>
+
+	</div>
+</div>
 
 <div class="center">
 <h3> Short Bio: <h2>
 <p style="font-size:15px;">
 	Abi Lopez is a junior at Stanford majoring in Electrical Engineering with a minor in Human Rights. She is part of the Daily Tech Team building the features and pages that help you enjoy The Stanford Daily. In her spare time, she enjoys painting, practicing French, and reading lots of books! 
 </p>
-</div>
-
-
-<div style = "height: auto;">
-<div class="row" style = "padding: 10px">
-
-	<div class="column left" style="height: 800px;">
-	<img src ="assets/hooverpic.jpg" style="width: 400px;" >
-	</div>
-	<div class="column left" style="height: 400px;">
-	<p></p>
-	</div>
-	<div class="column right" style="height: 400px;">
-		<p style="font-family: 'Open Sans', sans-serif; font-size:20px; line-height: 1.5;">
-		Abi Lopez is a junior at Stanford majoring in Electrical Engineering with a minor in Human Rights. 
-		<br><br>
-		She is part of the Daily Tech Team building the features and pages that help you enjoy The Daily. In her spare time, she enjoys painting, practicing French, and reading lots of books! 
-		</p>
-		
-		</div>
-		
-</div>
 </div>
 
 </body>
