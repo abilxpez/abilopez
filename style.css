@@ -1,6 +1,6 @@
-p, a{
+p, a, li{
 	font-family: 'Merriweather', serif;
-	color: #83848a;
+  text-decoration: none; /* no underline */
 }
 
 h6, h5, h4, h3, h2 {
@@ -16,6 +16,33 @@ h6, h5, h4, h3, h2 {
 
 .rowresume {
   display: flex;
+  flex-wrap: wrap;
   width:1000px;
   margin: 15px auto;
+  overflow: hidden;
+  background-color: #fffcfc;
+  padding: 10px;
 }
+
+.minirow {
+  display: flex;
+  flex-wrap: wrap;
+  width:500px;  
+}
+
+/* Fix column height
+
+.col {
+  vertical-align: top;
+  margin-bottom: -99999px;
+  padding-bottom: 99999px;
+}
+
+*/
+
+
+.row > [class*='col-'] {
+  display: flex;
+  flex-direction: column;
+}
+
