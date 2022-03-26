@@ -21,38 +21,53 @@ h4, h3 {
 </head>
 <body>
 
-<div class="tab">
-  <button><a href="projects.html">Projects</a></button>  
-  <button><a href="bio.html">Resume</a></button>
-  <button><a href="index.html">Home</a></button> 
-</div>
+	<div class="container-fluid" style="max-width: 1200">
+		<div className="navigation mt-2">
+		<nav class="navbar navbar-light">
+			<div class="container-fluid d-flex justify-content-center">
+			<a class="navbar-brand" href="index.html">
+				<span class="h3">
+					Abi Lopez
+				</span>
+			</a>
+			</div>
+		</nav>
+		  <nav class="navbar navbar-collapseOnSelect navbar-expand-md navbar-light" >
+			<div class="container-fluid">
+			  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#responsive-navbar-nav" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			  </button>
+			  <div class="collapse navbar-collapse d-flex justify-content-center" id="responsive-navbar-nav">
+				<ul class="navbar-nav ml-auto">
+				  <li>
+					<a class="nav-link" href="index.html">
+					  <span class="h5">
+						Home
+					  </span>
+					</a>
+				  </li>
+				  <li>
+					<a class="nav-link" href="bio.html">
+					  <span class="h5">
+						Resume
+					  </span>
+					</a>
+				  </li>
+				  <li>
+					<a class="nav-link" href="projects.html">
+					  <span class="h5">
+						Projects
+					  </span>
+					</a>
+				  </li>
+				</ul>
+			  </div>
+			</div>
+		  </nav>
+		</div>
+	</div>
 
-<h3>Contact Form</h3>
-<h3> Under Construction </h3>
-
-<!--
-<div class="container">
-  <form action="/action_page.php">
-    <label for="fname">First Name</label>
-    <input type="text" id="fname" name="firstname" placeholder="Your name..">
-
-    <label for="lname">Last Name</label>
-    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-
-    <label for="country">Country</label>
-    <select id="country" name="country">
-      <option value="australia">Australia</option>
-      <option value="canada">Canada</option>
-      <option value="usa">USA</option>
-    </select>
-
-    <label for="subject">Subject</label>
-    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-
-    <input type="submit" value="Submit">
-  </form>
-</div>
--->
+<h3>Project Page - Under Construction</h3>
 
 </body>
 </html>

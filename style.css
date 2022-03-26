@@ -1,132 +1,21 @@
-/*--------TAB CSS--------*/
-
-/* Style the tab */
-.tab {
-  overflow: hidden;
-  background-color: #ffffff;
-  width: 1200px;
-  margin: auto;
+p, a{
+	font-family: 'Merriweather', serif;
+	color: #83848a;
 }
 
-/* Style the buttons inside the tab */
-.tab button {
-  background-color: inherit;
-  float: right;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  transition: 0.1s;
-  font-size: 17px;
+h6, h5, h4, h3, h2 {
+	font-weight: normal;
+	font-family: 'Merriweather', serif;
 }
 
-/* Change background color of buttons on hover */
-.tab button:hover {
-  border: 0 1px 1px 1px;
-  background-color: #D3D3D3;
-}
-
-/* Create an active/current tablink class */
-.tab button.active {
-	border-top: 3px;
-  /*background-color: #ccc;*/
-  
-}
-
-/* TAB CSS END */
-
-/*------COLUMN CSS--------*/
-/* Create two unequal columns that floats next to each other */
-
-.row {
+.rowhome {
   display: flex;
   width:850px;
   margin: 15px auto;
-  
 }
 
-.column {
-  height: auto;
-}
-
-.left {
-  width: 60%;
-}
-
-.right {
-  width: 40%;
-}
-
-.minirow {
+.rowresume {
   display: flex;
-  width:500px;
-  /*margin: 15px auto;*/
-  
-}
-
-/*---------COLUMN END--------*/
-
-/*-----------COLLASPSIBLE----*/
-
-.collapsible {
-  background-color: white;
-  color: #83848a;
-  cursor: pointer;
-  padding: 0px 30px 0px 0px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 16px;
-  font-family: 'Merriweather', serif;
-}
-
-.active, .collapsible:hover {
-  background-color: #d1d1d1;
-}
-
-.collapsible:after {
-  content: '\002B'; 
-  color: #83848a;
-  font-weight: bold;
-  float: right;
-  margin-left: 5px;
-}
-
-.active:after {
-  content: "\2212";
-}
-
-.content {
-  padding: 0 18px;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-  background-color: white;
-}
-
-/*---------COLLASPSIBLE END----*/
-
-a { text-decoration: none; 
-	color: black;
-}
-
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
-
-.section {
-	color: #3671ad;
-	font-size: 14px;
-	
-}
-
-li {
-	list-style: none;
-	padding: 5px;
-	font-family: 'Merriweather', serif;
-	color: #83848a;
+  width:1000px;
+  margin: 15px auto;
 }
